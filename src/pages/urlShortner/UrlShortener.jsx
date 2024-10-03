@@ -5,6 +5,7 @@ import { urlShortener } from "../../apiCalls/urlShortener.js";
 import { jwtDecode } from "jwt-decode";
 import { getAllShortUrl } from "../../apiCalls/urlShortener.js";
 import TableRow from "./TableRow.jsx";
+import NavBar from "../../components/NavBar/NavBar.jsx";
 let frontEndUrl = import.meta.env.VITE_FRONTEND_URL
 
 function UrlShortener(){
@@ -55,6 +56,7 @@ function UrlShortener(){
     return(
 
         <>
+        <NavBar/>
         <form className={style.formContainer} onSubmit={handleSubmit}>
 
 			<div>
