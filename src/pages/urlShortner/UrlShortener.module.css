@@ -1,0 +1,11 @@
+.formContainer{
+	margin: 80px auto;
+	width: 400px;
+}
+
+.xyCenter{
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+
+}
