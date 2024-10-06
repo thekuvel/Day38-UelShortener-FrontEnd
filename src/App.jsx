@@ -22,7 +22,8 @@ function App() {
         <Route path='/register' element={<Register/>} />
         <Route path='/passwordreset' element={<PasswordReset/>}/>
         <Route path='/setpassword' element={<SetPassword/>}/>
-        <Route path='/redirectshorturl' element={<RedirectShortUrl/>}/>
+        {/* <Route path='/redirectshorturl' element={<RedirectShortUrl/>}/> */}
+        <Route path='/redirectshorturl/:shortUrl' element={<RedirectShortUrl/>}/>
         <Route path='/shorturl' element={<ProtectedRoutes component={<UrlShortener/>}/>}/>
       </Routes>
     </BrowserRouter> 

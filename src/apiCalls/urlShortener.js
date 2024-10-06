@@ -17,6 +17,7 @@ async function urlShortener(payLoad){
 }
 
 async function getLongUrl(payLoad){
+    console.log(payLoad)
     let res = await fetch(`${url}/getlongurl`, {
         method:"POST",
         headers:{

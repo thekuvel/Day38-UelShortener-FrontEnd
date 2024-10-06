@@ -26,7 +26,8 @@ function UrlShortener(){
         let res = await urlShortener({...userInput, email : loginData.userEmail});
         console.log(res)
         if(res.code == 1){
-            setshortUrl(frontEndUrl + "/redirectshorturl?shortUrl=" + res.shortUrl+"&email="+loginData.userEmail);
+            // setshortUrl(frontEndUrl + "/redirectshorturl?shortUrl=" + res.shortUrl+"&email="+loginData.userEmail);
+            setshortUrl(frontEndUrl + "/redirectshorturl/" + res.shortUrl);
         }else{
 			alert(res.msg);
 		}

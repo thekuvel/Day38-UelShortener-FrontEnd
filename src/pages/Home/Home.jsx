@@ -10,9 +10,11 @@ function Home() {
 
     return(
         <div>
-            <Link to="/">Home</Link>
+            <h3>URL Shortner</h3>
             <br />
-            <Link to="/properties">properties</Link>
+            Go To <Link to="/shorturl">Url Shortner</Link>
+            <br />
+            <br />
             <button className="btn btn-primary" onClick={handleLogout}>LogOut</button>
         </div>
     )
